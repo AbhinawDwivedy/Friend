@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_gallery-5.svg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CCFBF1"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="680" fill="url(#grad_gallery-5.svg)" opacity="0.3"/>
+  <rect x="20" y="20" width="760" height="640" rx="24" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="400" cy="380" r="150" fill="#F0FDFA"/>
+            <path d="M220 540 L 360 320 L 500 540 Z" fill="#14B8A6" opacity="0.8"/>
+            <path d="M380 540 L 480 370 L 580 540 Z" fill="#0D9488" opacity="0.6"/>
+            <circle cx="520" cy="270" r="45" fill="#FDE047"/>
+  <g transform="translate(400, 580)">
+    <rect x="-180" y="-24" width="360" height="48" rx="24" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="0" y="7" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#334155" text-anchor="middle">
+      Good Aura 🌿
+    </text>
+  </g>
+</svg>

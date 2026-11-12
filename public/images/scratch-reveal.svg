@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4EC"/>
+      <stop offset="50%" stop-color="#FFD1DC"/>
+      <stop offset="100%" stop-color="#FFCCD5"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A2828"/>
+      <stop offset="100%" stop-color="#2B1414"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0D2"/>
+      <stop offset="100%" stop-color="#FCD2BE"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="25" flood-color="#E07A94" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle ambient decorative circles -->
+  <circle cx="200" cy="250" r="180" fill="#FFF0F5" opacity="0.6"/>
+  <circle cx="650" cy="750" r="220" fill="#FFEBF0" opacity="0.5"/>
+  <circle cx="700" cy="200" r="80" fill="#FFF" opacity="0.4"/>
+
+  <!-- Aesthetic Portrait Silhouette Illustration -->
+  <g transform="translate(0, 40)" filter="url(#softShadow)">
+    <!-- Back Hair volume -->
+    <path d="M260 480 C 240 320, 310 180, 400 180 C 490 180, 560 320, 540 480 C 580 620, 540 850, 520 900 L 280 900 C 260 850, 220 620, 260 480 Z" fill="url(#hairGrad)"/>
+    
+    <!-- Neck & Shoulders -->
+    <path d="M350 490 L 350 600 C 350 620, 310 650, 230 700 L 220 900 L 580 900 L 570 700 C 490 650, 450 620, 450 600 L 450 490 Z" fill="url(#skinGrad)"/>
+    
+    <!-- Cozy Sweater (dusty rose) -->
+    <path d="M220 720 C 310 660, 350 640, 400 640 C 450 640, 490 660, 580 720 L 590 920 L 210 920 Z" fill="#E88F9E"/>
+    <!-- Collar detail -->
+    <path d="M340 640 C 370 665, 430 665, 460 640 C 440 675, 360 675, 340 640 Z" fill="#D36F80"/>
+
+    <!-- Head & Face -->
+    <path d="M310 380 C 310 270, 490 270, 490 380 C 490 480, 440 540, 400 540 C 360 540, 310 480, 310 380 Z" fill="url(#skinGrad)"/>
+    
+    <!-- Front Flowing Hair Waves -->
+    <path d="M320 320 C 360 270, 460 280, 480 340 C 460 420, 460 520, 480 620 C 450 560, 450 450, 430 400 C 400 370, 340 380, 320 320 Z" fill="#3D1E1E"/>
+    <path d="M315 340 C 335 440, 320 540, 310 620 C 300 530, 330 430, 315 340 Z" fill="#4A2828"/>
+
+    <!-- Cheeks Blush -->
+    <ellipse cx="350" cy="445" rx="18" ry="10" fill="#F472B6" opacity="0.45"/>
+    <ellipse cx="450" cy="445" rx="18" ry="10" fill="#F472B6" opacity="0.45"/>
+
+    <!-- Smile -->
+    <path d="M375 465 Q 400 485 425 465" stroke="#9E3A53" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes (gentle happy closed eyes / crescent) -->
+    <path d="M340 415 Q 355 405 370 415" stroke="#4A2828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <path d="M430 415 Q 445 405 460 415" stroke="#4A2828" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Sparkle / Star near ear -->
+    <path d="M505 430 Q 515 430 515 420 Q 515 430 525 430 Q 515 430 515 440 Q 515 430 505 430 Z" fill="#FFE58F"/>
+  </g>
+
+  <!-- Friendly label banner at bottom -->
+  <g transform="translate(400, 870)">
+    <rect x="-240" y="-30" width="480" height="60" rx="30" fill="white" opacity="0.95"/>
+    <text x="0" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#881337" text-anchor="middle">
+      ✨ The Prettiest Girl With The Kindest Smile ✨
+    </text>
+  </g>
+</svg>

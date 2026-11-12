@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-hand: 'Caveat', cursive, sans-serif;
+    --font-script: 'Sacramento', cursive;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: #FFF3F5;
+  }
+
+  #root {
+    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100vw;
+  }
+}
+
+/* Custom font utility classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Reference Theme: Soft Blush Topographic Contour Background */
+.bg-topo-pattern {
+  background-color: #FFF3F5;
+  background-image: 
+    radial-gradient(#F9C5CF 0.75px, transparent 0.75px),
+    repeating-radial-gradient(circle at 50% 0, transparent 0, transparent 40px, rgba(235, 175, 190, 0.12) 41px, transparent 42px, transparent 80px),
+    repeating-radial-gradient(circle at 10% 80%, transparent 0, transparent 50px, rgba(235, 175, 190, 0.10) 51px, transparent 52px, transparent 100px);
+  background-size: 24px 24px, 100% 100%, 100% 100%;
+}
+
+/* Delicate wavy contour lines SVG background overlay */
+.contour-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg width='1200' height='800' viewBox='0 0 1200 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 200 C 300 120, 600 320, 1200 150 M0 320 C 350 220, 650 450, 1200 280 M0 450 C 400 350, 700 580, 1200 400 M0 580 C 300 480, 750 700, 1200 520 M0 700 C 400 600, 800 800, 1200 650' stroke='%23F4BCC8' stroke-width='1.2' stroke-opacity='0.3' stroke-dasharray='4 6'/%3E%3C/svg%3E");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+}
+
+/* Glassmorphism card styling matching the reference screenshots */
+.aesthetic-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 225, 230, 0.9);
+  box-shadow: 0 15px 35px -12px rgba(220, 120, 145, 0.16);
+}
+
+.aesthetic-card-subtle {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 235, 240, 0.85);
+  box-shadow: 0 10px 25px -8px rgba(220, 130, 155, 0.12);
+}
+
+/* Lined notebook paper texture for the letter modal */
+.notebook-paper {
+  background-color: #fffdfa;
+  background-image: 
+    linear-gradient(90deg, transparent 44px, #f4a2b2 44px, #f4a2b2 46px, transparent 46px),
+    linear-gradient(#f1e6e8 1px, transparent 1px);
+  background-size: 100% 100%, 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+/* 3D Transform Utilities for mobile & desktop */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF1F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #F7BAC7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E88F9E;
+}
